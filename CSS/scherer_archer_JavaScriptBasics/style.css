@@ -1,0 +1,91 @@
+/* Container Styles */
+
+#wrapper{
+    background-color: rgb(32, 42, 85);
+    width: 970px;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    width: 100%;
+    background-color: red;
+    color: rgb(233, 233, 233);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+h1{
+    margin-left: 30px;
+}
+nav{
+    background-color: teal;
+    color: turquoise;
+    flex: 1;
+    border-radius: 20px;
+    margin-right: 25px;
+    margin-top: 25x;
+    height: fit-content;
+    font-size: 0.95em;
+}
+.container{
+    background-color: black;
+    color: rgb(233, 233, 233);
+    flex: 4;
+    border-radius: 20px;
+    /* padding-left: 18px; */
+    /* padding-right: 18px; */
+    font-size: .95em;
+}
+#content{
+    margin: 20px;
+}
+
+footer{
+    display: flex;
+    background-color: gray;
+    color:rgb(233, 233, 233);
+    border-radius: 15px;
+    width: 100%;
+    height: 47px;
+    margin-top: 25px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+/* Text Styles */
+
+a{
+    color: turquoise;
+}
+span{
+    color: rgb(119, 62, 226)
+}
+h2{
+    margin-bottom: -5px;
+    margin-top: 25px;
+}
+
+
+/* List Styles */
+
+#home{
+    list-style-type: none;
+    margin-left: -15px;
+}
+nav ul{
+    /* margin-left: 15px; */
+}
+nav li{
+    margin-top: 5px;
+}
+
+.container li{
+    margin-left: -17px;
+    margin-bottom: 10px;
+}
+

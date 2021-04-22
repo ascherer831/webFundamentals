@@ -1,0 +1,13 @@
+.center-box{
+    display: flex;
+    width: 740px;
+    height: 233px;
+    background-color: #152c61;
+    justify-content: center;
+    align-items: center;
+}
+.center-item{
+    width: 75px;
+    height: 75px;
+    background-color: burlywood;
+}

@@ -1,0 +1,256 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width:1040px;
+    background-color: #0c1e2d;
+    padding: 25px 12.5px 5px 12.5px;
+}
+
+#container-main {
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 25px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* Text decor */
+a {
+    text-decoration: none;
+}
+
+#james, .nav a, .info-box, .button {
+    color:  #eceef0;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+#logo {
+    margin-left: 25px;
+    flex: 1;
+}
+
+#james {
+    letter-spacing: -0.7px;
+    font-size: 1.9em;
+    text-decoration-line: 3px  ;
+    font-weight: lighter;
+    margin-right: 4px;
+}
+
+#consulting {
+    color: #0086da;
+    font-weight: lighter;
+    font-size: 1.89em;
+    letter-spacing: .8px;
+}
+
+.nav {
+    flex: 2;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1em;
+    padding-left: 40px;
+    margin-left: 60px;
+    margin-right: -13px;
+}
+
+.nav li {
+    display: inline;
+}
+
+#h-home a {
+    color: #0086da;
+    font: lighter;
+}
+
+#main-image {
+    width:100%;
+    padding: 20px;
+}
+
+/*First row of Info Boxes */
+.sub-con1 {
+display: flex;
+width: 100%;
+padding:0px 20px;
+}
+
+#project {
+    margin: 0px 20px;
+}
+
+.info-box {
+    background-color: #005fa2;
+    flex: 1;
+    display: block;
+    height: 260px;
+}
+
+.info-box-header {
+    margin: 12px 12px;
+    height: fit-content;
+}
+
+.info-box-header img {
+    width: 42px;
+    vertical-align: middle;
+}
+
+.info-box-header  span {
+    vertical-align: middle;
+    font-size: 1.6em; 
+}
+
+.b-box {
+display: block;
+margin-left: 25px;
+}
+
+.button {
+    background-image: linear-gradient(to top, #2D88D7 0%, #2D88D7 45%, #4DA2e7 55%, #4DA2E7 100%);
+    border-radius: 5px;
+    font-size: 1.15em;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    padding: 10px 40px;
+}
+
+.info-box p {
+    display: block;
+    margin: 0px 23px; 
+    font-size: 13.7px;
+    height: 140px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Label row */
+#sub-con2 {
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+#world {
+    flex: 2;
+    font-size: 1.6em;
+    color: #3a4e5d;
+} 
+
+#testimonial {
+    flex: 1;
+    font-size: 1.6em;
+    color: #3a4e5d;
+    margin-left: 40px;     
+}
+
+/* Second row of Info Boxes */
+.sub-con3 {
+    display: flex;
+    padding:0px 20px 20px 20px;
+}
+
+.building {
+    flex: 1;
+}
+
+.building img {
+    width: 100%;
+}
+
+.goals {
+    flex: 1;
+    font-size: 13.7px;
+    margin: 0px 20px;
+}
+.goals p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.goals a {
+    text-decoration: none;
+    color: #688bab;
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+
+#learn {
+    margin-top: 27px;
+}
+.t-text {
+    flex: 1;
+}
+
+#s-bubble {
+    width: 100%;
+    height:130px;
+    background-color: #d7eaff;
+    /* text-align: center; */
+    
+}
+#s-bubble p {
+    padding:25px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#triangle {
+    margin-left: 32px;
+    width:0px;
+    height: 0px;
+    border-top: 12px solid #d7eaff;
+    border-right: 12px solid transparent ;
+    /* border-bottom: 12px solid #d7eaff; */
+    border-left: 12px solid transparent;
+}
+
+#author {
+    margin-top: 13px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Footer */
+footer { 
+    background-color: #d7eaff;
+    margin-top: 1px;
+    width: 100%;
+    padding:20px;
+    
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left:330px;
+    margin-right: 330px;
+}
+
+#f-home a {
+    color: #4da2e7;
+    font: lighter;
+}
+
+footer a {
+    color: #005fa2;
+    font-size: 14;
+    font-weight: 525;
+}
+
+/* This one was more challenging than it looked! Thanks for all the teaching thus far! */
