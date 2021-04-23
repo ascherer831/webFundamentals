@@ -86,4 +86,26 @@ function a(b,c){
 a(0,10);
 console.log(a(0,10));
 
-//PRedict-- 0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0
+//Predict-- 0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9,0
+
+function a(){
+    for(var i=0; i<10; i++){
+        for(var j=0; j<10; j++){
+            console.log(j);
+        }
+        console.log(i);
+    }
+}
+
+//Predict-- (No function called thus no output)
+
+function a(){
+    for(var i=0; i<10; i++){
+        for(var j=0; j<10; j++){
+            console.log(i,j);
+        }
+        console.log(j,i);
+    }
+}
+
+//Predict-- (No function called thus no output)
