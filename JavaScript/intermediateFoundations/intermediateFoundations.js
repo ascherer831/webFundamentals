@@ -33,14 +33,44 @@
 
 // Array: Second-to-Last: Return the second-to-last element of an array. Given [42, true, 4, "Liam", 7], return "Liam".  If array is too short, return null.
 
-function secondToLast(arr){
-    if( arr.length <2){
-        return null;
-    }
-    return arr[arr.length-2];
-}
-console.log(secondToLast([10]))
+// function secondToLast(arr){
+//     if( arr.length <3){
+//         return null;
+//     }
+//     return arr[arr.length-2];
+// }
+// console.log(secondToLast([10]))
 
 // Array: Nth-to-Last: Return the element that is N-from-array's-end.  Given ([5,2,3,6,4,9,7],3), return 4.  If the array is too short, return null.
+
+// function nthFromEnd(arr,n){
+//     if( arr.length <=n){
+//         return null;
+//     }
+//     return arr[arr.length-n];
+// }
+// console.log(nthFromEnd([10,2,3,15,16,18,2],6))
+
 // Array: Second-Largest: Return the second-largest element of an array. Given [42,1,4,3.14,7], return 7.  If the array is too short, return null.
+// function secondLargest(arr) {
+//     if(arr.length < 2){
+//         return null;
+//     }
+//     var max = arr[0];
+//     var secondMax = null;
+//     for (var i = 0; i < arr.length; i++){
+//         if( arr[i]> max) {
+//             var max= arr[i];
+//         }
+        
+//     }
+//     for(var j= 0; j <arr.length; j++) {
+//         if( arr[j] < max && arr[j]> secondMax){
+//             var secondMax = arr[j];
+//         }
+//     }
+//     return secondMax;
+// }
+// console.log(secondLargest([10,2,3,15,16,18,2]))
+
 // Double Trouble: Create a function that changes a given array to list each existing element twice, retaining original order.  Convert [4, "Ulysses", 42, false] to [4,4, "Ulysses", "Ulysses", 42, 42, false, false].
