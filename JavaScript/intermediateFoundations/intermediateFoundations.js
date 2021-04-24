@@ -20,16 +20,16 @@
 
 // Fibonacci - Create a function to generate Fibonacci numbers.  In this famous mathematical sequence, each number is the sum of the previous two, starting with values 0 and 1.  Your function should accept one argument, an index into the sequence (where 0 corresponds to the initial value, 4 corresponds to the value four later, etc).  Examples: fibonacci(0) = 0 (given), fibonacci(1) = 1 (given), fibonacci(2) = 1 (fib(0)+fib(1), or 0+1), fibonacci(3) = 2 (fib(1) + fib(2)3, or 1+1), fibonacci(4) = 3 (1+2), fibonacci(5) = 5 (2+3), fibonacci(6) = 8 (3+5), fibonacci(7) = 13 (5+8).  
 
-// function fibonacciNums(num) {
-//     // var fibNum= ;
-//     var fibArr= [0,1];
-//     for(var i=2; i<= num; i++) {
-//         fibArr[i]= fibArr[i-1] + fibArr[i-2];
-//         fibArr.push(fibArr[i])
-//     }
-//     return fibArr[i];
-// }
-// console.log(fibonacciNums(9));
+function fibonacciNums(num) {
+    // var fibNum= ;
+    var fibArr= [0,1];
+    for(var i=2; i<= num; i++) {
+        fibArr[i]= fibArr[i-1] + fibArr[i-2];
+        // fibArr.push(fibArr[i])
+    }
+    return fibArr[num];
+}
+console.log(fibonacciNums(10));
 
 // Array: Second-to-Last: Return the second-to-last element of an array. Given [42, true, 4, "Liam", 7], return "Liam".  If array is too short, return null.
 
@@ -62,7 +62,6 @@
 //         if( arr[i]> max) {
 //             var max= arr[i];
 //         }
-//   
 //     }
 //     for(var j= 0; j <arr.length; j++) {
 //         if( arr[j] < max && arr[j]> secondMax){
@@ -74,14 +73,10 @@
 // console.log(secondLargest([10,2,3,15,16,18,2]))
 
 // Double Trouble: Create a function that changes a given array to list each existing element twice, retaining original order.  Convert [4, "Ulysses", 42, false] to [4,4, "Ulysses", "Ulysses", 42, 42, false, false].
-function doubleTrouble (arr) {
-    var tempArr= arr;
-    for(var i= 0; i< arr.length; i+=2) {
-        arr[i]=tempArr[i];
-        arr[i+1]=tempArr[i];
-        arr.push
-        
-    }
-    return arr;
-}
-console.log(doubleTrouble([4, "Ulysses", 42, false]))
+// function doubleTrouble (arr) {
+//     for( var i=0; i< arr.length; i+=2) {
+//         arr.splice(i,0,arr[i])
+//     }
+//     return arr;
+// }
+// console.log(doubleTrouble([4, "Ulysses", 42, false]))
