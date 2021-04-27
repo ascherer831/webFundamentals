@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Disappearing Ninjas</title>
+
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).hide();
+            });
+            $('button').click(function(){
+                $('img').show();
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Disappearing Ninjas</h1>
+        <div id= "container">
+            <img src="classy.jpg" alt="Stay Classy">
+            <img src="classy.jpg" alt="Stay Classy">
+            <img src="classy.jpg" alt="Stay Classy">
+            <img src="classy.jpg" alt="Stay Classy">
+            <img src="classy.jpg" alt="Stay Classy">
+            <img src="classy.jpg" alt="Stay Classy">
+            <img src="classy.jpg" alt="Stay Classy">
+            <img src="classy.jpg" alt="Stay Classy">
+        </div>
+        <button>Restore</button>
+    </div>
+</body>
+</html>

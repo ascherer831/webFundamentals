@@ -60,7 +60,20 @@
             $('#html button').click(function(){
                 $('#html div').html('<p>The .html function serves to insert html elements into other elements using whatever tag you use. In this expample this p tag is being added to 2 divs</p>');
             });
-        }) 
+
+            $('#attr button').click(function(){
+                $('#attr img').attr("src", "addClass.jpeg");
+            })
+
+            $('#val button').click(function(){
+                var value= $(this).val();
+                $('#val p').text(value);
+            })
+
+            $('#text').click(function(){
+                $('#text p').text('<p>This function adds text to a tag</p>');
+            });
+        }); 
     </Script>
     <title>jQuery Functions</title>
 </head>
@@ -117,7 +130,7 @@
         </div>
         <div id="append" class="function">
             <h2>.append()</h2>
-            <button></button>
+            <button>Click me</button>
             <p>The .append function inserts content that is specified by the parameter to the end of each...</p>
         </div>
         <div id="html" class="function">
@@ -129,17 +142,17 @@
         <div id="attr" class="function">
             <h2>.attr()</h2>
             <button>Click me!</button>
-            <p>I do not understand the use case for this</p>
+            <p>The .attr function allows you to replace the value of any attribute within an element, by calling the attribute directy and passing a new value into it. <img src="jQuery.png" alt=""></p>
         </div>
         <div id="val" class="function">
             <h2>.val()</h2>
-            <button>Click me!</button>
-            <p>I do not understand the use case for this</p>
+            <button value="Click Me!">Click me!</button>
+            <p></p>
         </div>
-        <div id=".text" class="function">
-            <h2>.html()</h2>
+        <div id="text" class="function">
+            <h2>.text()</h2>
             <button>Click me!</button>
-            <p>I do not understand the use case for this</p>
+            <p></p>
         </div>
     </div>
 </body>
