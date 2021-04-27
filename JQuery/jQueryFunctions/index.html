@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <Script>
+        $(document).ready(function(){
+            $('#click button').click(function() {
+                alert(".click in action!!");
+            });
+
+            $('#hide button').click(function(){
+                $('#hide p').hide();
+            });
+
+            $('#hide button').click(function(){
+                $('#hide p').show(1000);
+            });
+
+            $('#show button').click(function(){
+                $('#show p').show(1000);
+            });
+
+            $('#toggle button').click(function(){
+                $('#toggle p').toggle();
+            });
+
+            $('#slide-down button').click(function(){
+                $('#slide-down p').slideDown(2000);
+            });
+
+            $('#fade-in button').click(function(){
+                $('#fade-in img').fadeIn(2000);
+            });
+
+            $('#fade-out button').click(function(){
+                $('#fade-out img').fadeOut(2000);
+            });
+
+            $('#add-class button').click(function(){
+                $('#add-class').addClass('classy');
+            });
+
+            $('#before button').click(function(){
+                $('#before button').before('<h2>.before()</h2>');
+            });
+
+            $('#after button').click(function(){
+                $('#after button').after('<p>The .after function inserts content after each matched element. In this example the p tag is added after the button.</p>');
+            });
+
+            $('#append button').click(function(){
+                $('#append p').append(' element.');
+            });
+
+            $('#html button').click(function(){
+                $('#html div').html('<p>The .html function serves to insert html elements into other elements using whatever tag you use. In this expample this p tag is being added to 2 divs</p>');
+            });
+        }) 
+    </Script>
+    <title>jQuery Functions</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1><img class= "logo" src="jQuery.png" alt="jQuery Logo"> jQuery Functions</h1>
+        <div id= "click" class="function">
+            <h2>.Click()</h2>
+            <button>Click me!</button>
+            <p>The .click function is an event listener that triggers another function when a click is performed. </p>
+        </div>
+        <div id= "hide" class="function">
+            <h2>.Hide() & .Show()</h2>
+            <button>Click me!</button>
+            <p>The .hide function will hide matched elements when the event listener function is triggered. In this example .show runs right after .hide...</p>
+        </div>
+        <div id= "show" class="function">
+            <h2>.Show()</h2>
+            <button>Click me!</button>
+            <p>The .show function will show previously hidden or not displayed matched elements when the event listener function is triggered.</p>
+        </div>
+        <div id= "toggle" class="function">
+            <h2>.Toggle()</h2>
+            <button>Click me!</button>
+            <p>The .toggle function will display or hide matched elements based on their current condition. i.e. if shown it will hide. If hidden it will show.</p>
+        </div>
+        <div id= "slide-down" class="function">
+            <h2>.slideDown()</h2>
+            <button>Click me!</button>
+            <p>The .slideDown function will display a hidden element by animating a "pull-down" type motion. <img class="logo" src="jQuery.png" alt="jQuery Logo"></p>
+        </div>
+        <div id= "fade-in" class="function">
+            <h2>.fadeIn()</h2>
+            <button>Click me!</button>
+            <p>The .fadeIn function will display hidden elements using a "fade-in" style animation. <img class="logo" src="jQuery.png" alt="jQuery Logo"></p>
+        </div>
+        <div id= "fade-out" class="function">
+            <h2>.fadeOut()</h2>
+            <button>Click me!</button>
+            <p>The .fadeOut function will hide a displayed element using a "fade-out" style animation. <img class="logo" src="jQuery.png" alt="jQuery Logo"></p>
+        </div>
+        <div id= "add-class" class="function">
+            <h2>.addClass()</h2>
+            <button>Click me!</button>
+            <p>The .addClass function adds a CSS class to a given element and alters the style to the new class attributes.</p>
+        </div>
+        <div id= "before" class="function">
+            <button>Click me!</button>
+            <p>The .before function inserts content before each matched element. In this example the h2 is added before the button.</p>
+        </div>
+        <div id= "after" class="function">
+            <h2>.after()</h2>
+            <button>Click me!</button>
+        </div>
+        <div id="append" class="function">
+            <h2>.append()</h2>
+            <button></button>
+            <p>The .append function inserts content that is specified by the parameter to the end of each...</p>
+        </div>
+        <div id="html" class="function">
+            <h2>.html()</h2>
+            <button>Click me!</button>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="attr" class="function">
+            <h2>.attr()</h2>
+            <button>Click me!</button>
+            <p>I do not understand the use case for this</p>
+        </div>
+        <div id="val" class="function">
+            <h2>.val()</h2>
+            <button>Click me!</button>
+            <p>I do not understand the use case for this</p>
+        </div>
+        <div id=".text" class="function">
+            <h2>.html()</h2>
+            <button>Click me!</button>
+            <p>I do not understand the use case for this</p>
+        </div>
+    </div>
+</body>
+</html>
